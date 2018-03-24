@@ -1,1 +1,0 @@
-appendtextappendtextappendtextappendtextappendtextappendtextappendtextHello ${user.username}!Hello ${user.username}!Hellosam!Hello sam!Hello sam!Hello sam!Hello sam!Hello sam!Hello sam!Hello sam!Hello sam! You are 25Hello sam! You are undefined
