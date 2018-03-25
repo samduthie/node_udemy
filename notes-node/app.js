@@ -14,7 +14,8 @@ console.log('yargs', argv)
 if (command === 'add'){
     var note = notes.addNote(argv.title, argv.body);
     if (note){
-        console.log(note);
+        console.log('Note aded');
+        notes.logNote(note);
     } else {
         console.log("note title taken")
     }
@@ -26,7 +27,13 @@ if (command === 'add'){
     var message = noteRemoved ? 'Note was removed' : 'Note not found';
     console.log(message)
 } else if (command === 'read'){
-    notes.readNote(argv.title)
+    var note = notes.readNote(argv.title);
+    if (note) {
+        console.log('Note found')
+        notes.logNote(note);
+    } else {
+        console.log('note not found')
+    }
 } else {
     console.log('command not recognised')
 }
