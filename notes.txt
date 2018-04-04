@@ -1,0 +1,7 @@
+
+nodemon only used for development purposes
+
+templating example: 
+
+    var user = os.userInfo();
+    console.log(`Hello ${user.username}!`) 
